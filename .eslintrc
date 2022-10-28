@@ -1,0 +1,33 @@
+{
+    "extends": [
+        "airbnb-base",
+        "prettier"
+    ],
+    "rules": {
+        "no-restricted-syntax": 0,
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "linebreak-style": 0,
+        "jest/no-disabled-tests": "warn",
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "error",
+        "jest/prefer-to-have-length": "warn",
+        "jest/valid-expect": "error",
+        "prettier/prettier": [
+            "error"
+        ],
+        "consistent-return": 0
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "react-hooks",
+        "jest",
+        "prettier"
+    ],
+    "env": {
+        "jest/globals": true
+    }
+}

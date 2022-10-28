@@ -1,0 +1,4 @@
+export const TIPO_PERSONA = {
+  FISICA: 'FISICA',
+  JURIDICA: 'JURIDICA',
+};
