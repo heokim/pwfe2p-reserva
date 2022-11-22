@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, ScrollView, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, TouchableOpacity } from 'react-native';
 import { useFocusEffect, useNavigation } from '@react-navigation/core';
-import { Button, Text, Spinner, Icon, List, FlatList } from 'native-base';
-import { Table, Row, Rows } from 'react-native-table-component';
+import { Text, Spinner, Icon, FlatList } from 'native-base';
 import { getAll as getAllFichas } from '../../api/fichas';
 import { get as getPaciente } from '../../api/pacientes';
 import { get as getCategoria } from '../../api/tipoProducto';
@@ -32,8 +31,7 @@ const FichasScreen = () => {
   const [data, setData] = useState([]);
   const [filtros, setFiltros] = useState({});
 
-  const updateFiltro = (field, value) =>
-    setFiltros((prev) => ({ ...prev, [field]: value }));
+  const updateFiltro = (field, value) => setFiltros((prev) => ({ ...prev, [field]: value }));
 
   useFocusEffect(
     React.useCallback(() => {
@@ -124,7 +122,7 @@ export default FichasScreen;
 const ListItem = ({ item }) => {
   const navigation = useNavigation();
   const [isOpen, setIsOpen] = useState(false);
-  console.log(item);
+  // console.log(item);
   const toggle = () => setIsOpen((prev) => !prev);
   return (
     <View

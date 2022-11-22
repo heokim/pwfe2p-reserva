@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, ScrollView, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, View, TouchableOpacity } from 'react-native';
 import { useFocusEffect, useNavigation } from '@react-navigation/core';
-import { Text, Spinner, Icon, List, FlatList } from 'native-base';
-import { Entypo, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { Text, Spinner, Icon, FlatList } from 'native-base';
+import { Entypo, Ionicons } from '@expo/vector-icons';
 import { getAll as getAllPacientes } from '../../api/pacientes';
 import { TIPO_PERSONA } from '../../constants/constants';
 import moment from 'moment';
